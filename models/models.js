@@ -1,5 +1,4 @@
 var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
 
 var postSchema = new mongoose.Schema({
 	created_by: String,		//should be changed to ObjectId, ref "User"
@@ -16,3 +15,31 @@ var userSchema = new mongoose.Schema({
 
 mongoose.model('Post', postSchema);
 mongoose.model('User', userSchema);
+
+//utility functions
+var User = mongoose.model('User');
+exports.findByUsername = function(userName, callback){
+
+	User.findOne({ user_name: userName}, function(err, user){
+
+		if(err){
+			return callback(err);
+		}
+
+		//success
+		return callback(null, user);
+	});
+
+}
+
+exports.findById = function(id, callback){
+
+	User.findById(id, function(err, user){
+
+		if(err){
+			return callback(err);
+		}
+
+		return callback(null, user);
+	});
+}

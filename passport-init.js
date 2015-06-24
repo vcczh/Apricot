@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');   
 var User = mongoose.model('User');
 var LocalStrategy   = require('passport-local').Strategy;
-var bCrypt = require('bcrypt-nodejs');
+var bCrypt = require('bcrypt');
 
 module.exports = function(passport){
 
@@ -50,10 +50,11 @@ module.exports = function(passport){
 			passReqToCallback : true // allows us to pass back the entire request to the callback
 		},
 		function(req, username, password, done) {
-
+			console.log('bkp#1');
 			// find a user in mongo with provided username
 			User.findOne({ 'username' :  username }, function(err, user) {
 				// In case of any error, return using the done method
+
 				if (err){
 					console.log('Error in SignUp: '+err);
 					return done(err);
