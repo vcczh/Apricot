@@ -1,15 +1,8 @@
 var mysql = require('mysql');
-
+var dbconfig = require('./dbconfig');
 var db = {};
 
-db.pool = mysql.createPool({
-  connectionLimit : 10, //important
-  host     : 'localhost',
-  user     : 'root',
-  password : '63141716',
-  database : 'test',
-  debug    :  false
-});
+db.pool = mysql.createPool(dbconfig.connectionPool);
 
 db.test = function (req,res) {
     
@@ -19,7 +12,7 @@ db.test = function (req,res) {
 db.query = function (queryString, req, res) {
 
     if (!queryString) {
-        res.json({"code" : 101, "status" : "Empty query!"});
+        res.json({"code" : 101, "status" : "Error in query String!"});
         return;
     }
 
