@@ -1,7 +1,7 @@
 # Apricot
 
 ## Introduction
-This project is a social meida based E-commerce platform mainly targeting at unviersity students who want to sell their second hand belongs like books and furniture or purchase cheap but high quality items.
+This project is a social meida based E-commerce platform mainly targeting at unviersity students who want to sell their second hand belongs like books and furniture or purchase cheap but high quality items. Moreover, people can connect to others by following their accounts. Through this way, people can get new item on sale notification and view the sale post from those whom they follow. 
 In the development, we use AngularJS, NodeJS, Mean, SocketIO, Express and MySQL. We also use many tools for this project.
 We hope that this project will be helpful for the university communities and even other people who would like to sell or purchase used items.
 
