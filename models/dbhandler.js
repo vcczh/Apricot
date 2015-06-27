@@ -6,7 +6,7 @@ db.pool = mysql.createPool(dbconfig.connectionPool);
 
 db.test = function (req,res) {
     
-    db.query("select * from Persons", req, res);
+    db.query("select * from Users", req, res);
 };
 
 db.query = function (queryString, req, res) {

@@ -4,13 +4,13 @@ module.exports = {
         'user': 'root',
         'password': '63141716'
     },
-	'database': 'test',
+	'database': 'ApricotDB',
 	'connectionPool': {
 		'connectionLimit' : 10, //important
 	  	'host'     : 'localhost',
 	  	'user'     : 'root',
 	  	'password' : '63141716',
-	  	'database' : 'test',
+	  	'database' : 'ApricotDB',
 	  	'debug'    :  false
 	}
 };
