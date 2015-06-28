@@ -3,7 +3,7 @@ var dbconfig = require('../models/dbconfig');
 
 var connection = mysql.createConnection(dbconfig.connection);
 
-connection.query('DROP DATABASE ' + dbconfig.database);
+connection.query('DROP DATABASE IF EXISTS ' + dbconfig.database);
 
 console.log('Success: Database Dropped!');
 
