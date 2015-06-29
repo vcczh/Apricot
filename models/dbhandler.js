@@ -6,7 +6,7 @@ db.pool = mysql.createPool(dbconfig.connectionPool);
 
 db.test = function (req,res) {
     
-    db.query("select * from Users", req, res);
+    db.query("select * from user", req, res);
 };
 
 db.query = function (queryString, req, res) {
@@ -40,7 +40,6 @@ db.query = function (queryString, req, res) {
 }
 
 db.queryWithCallback = function (queryString, callBack) {
-
     if (!queryString) {
         callBack("Error: Empty query", null);
         return;
@@ -53,12 +52,12 @@ db.queryWithCallback = function (queryString, callBack) {
             return;
         }   
 
-        console.log('connected as id ' + connection.threadId);
+        //console.log('connected as id ' + connection.threadId);
         
         connection.query(queryString,function(err,rows){
             connection.release();
             if(!err) {
-              callBack(null, rows);
+                callBack(null, rows);
             }           
         });
 

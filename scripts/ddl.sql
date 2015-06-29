@@ -8,9 +8,9 @@ CREATE SCHEMA IF NOT EXISTS `firstAttempt` DEFAULT CHARACTER SET utf8 COLLATE ut
 -- Table `firstAttempt`.`user`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `firstAttempt`.`user` (
-  `uid` INT NOT NULL,
-  `name` VARCHAR(45) NOT NULL,
-  `password` VARCHAR(45) NULL,
+  `uid` INT NOT NULL AUTO_INCREMENT,
+  `username` VARCHAR(45) NOT NULL,
+  `password` VARCHAR(60) NULL,
   `email` VARCHAR(45) NULL,
   `phone` VARCHAR(45) NULL,
   `addrid` VARCHAR(45) NULL,

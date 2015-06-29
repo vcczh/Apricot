@@ -10,9 +10,9 @@ CREATE DATABASE IF NOT EXISTS `' + dbconfig.database + '` DEFAULT CHARACTER SET 
 
 connection.query('\
 CREATE TABLE IF NOT EXISTS `' + dbconfig.database + '`.`user` (\
-  `uid` INT NOT NULL,\
-  `name` VARCHAR(45) NOT NULL,\
-  `password` VARCHAR(45) NULL,\
+  `uid` INT NOT NULL AUTO_INCREMENT,\
+  `username` VARCHAR(45) NOT NULL,\
+  `password` VARCHAR(60) NULL,\
   `email` VARCHAR(45) NULL,\
   `phone` VARCHAR(45) NULL,\
   `addrid` VARCHAR(45) NULL,\
