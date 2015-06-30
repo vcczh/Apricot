@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apricot</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+
+    <!-- nav -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-apricot">  
+        <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a href="#" class="navbar-brand">Apricot</a>
+            </div>
+
+        <div class="navbar-collapse collapse" id="navbar">    
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="register.html"><i class="glyphicon glyphicon-registration-mark"></i> Register</a>
+                </li>
+                <li>
+                    <a href="login.html"><i class="glyphicon glyphicon-log-in"></i> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- body -->
+    <div class="container login-body">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <h3 class="login-title">Wellcome back! Please sign in</h3>
+                <hr class="login-colorbar"> 
+                <form method="POST" action="#" class="form-signin">
+                    <fieldset>
+                    <input type="text" class="form-control" placeholder="E-mail" name="email">
+                    <input type="password" class="form-control" placeholder="Password" name="password" value="">
+                    <a class="pull-right" href="#">Forget password?</a>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="remember" value="Remember me" />Remember me
+                        </label>
+                    </div>
+                    <input type="submit" class="btn btn-lg btn-primary btn-block" value="Register">
+                    <p class="text-center" style="margin-top:10px;">OR</p>
+                    <a class="btn btn-lg btn-default btn-block" href="#"><i class="icon-github"></i> Register with Facebook</a>
+                    <br>
+                    <p class="text-center"><a href="/login">Register for an account?</a></p>
+                </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
