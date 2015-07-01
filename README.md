@@ -45,6 +45,7 @@ Here are the links of the programming language used in this project
 * [Meeting 06/19/2015](https://docs.google.com/document/d/1y2A271obG63jqEwl0V7-V3k0TyifsUGGJUjDMAyZ2nE/edit)
 * [Meeting 06/23/2015](https://docs.google.com/document/d/1YWkmMX3kTKHPIrYyisdSEBM6g8QkcL65s5k5ee8YmOs/edit)
 * [Meeting 06/26/2015](https://docs.google.com/document/d/1wJT9vOFatvYMqrTYquffbA-I2nMk9BxvPVo-p8Q32CI/edit)
+* [Meeting 06/30/2015](https://docs.google.com/document/d/10ma2KlHGvDlG8RF4BpAwXxOZOdR9m-nfMtO4WXjmOIE/edit)
 
 ## Additional Document (Temporary Document)
 * [System Design Approaches](https://docs.google.com/document/d/1nQf4pyIPcWFoBomr89sWkv3CK-HIf99955IrFJrP8OY/edit)

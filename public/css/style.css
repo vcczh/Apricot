@@ -8,10 +8,11 @@ body {
 nav {
   background-color: #FBCEB1;
 }
+
 .navbar-apricot {
     /*background-color: #FBCEB1;*/
     border-bottom: 1px black solid; 
-  }
+}
 
 .login-body, .index-body{
     position: relative;
