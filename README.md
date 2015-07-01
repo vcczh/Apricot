@@ -32,6 +32,7 @@ Here are the links of the programming language used in this project
 * [Boostrap](http://getbootstrap.com/)
 * [MySQL](https://www.mysql.com/)
 * [BackboneJS](http://backbonejs.org/) 
+* [FireBase](https://www.firebase.com/)
 
 ## Online Tools
 * [Trello](https://trello.com/) Project Management Tool
