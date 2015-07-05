@@ -99,8 +99,9 @@ h1.page-header {
 }
 
 /******************************************** Search Bar *********************************************************/
+
 .form-group{
-    width: 837px;
+    width: 970px;
 }
 
 .form-control {
@@ -118,9 +119,18 @@ h1.page-header {
     padding-right: 10px;
 }
 
+.thumbnail {
+    max-width: 200px;
+    max-height: 200px;
+}
+
 .img-responsive {
     max-width: 200px;
     max-height: 200px;
+}
+
+#show-area-button {
+    margin-top: 30px;
 }
 
 
@@ -151,6 +161,10 @@ h1.page-header {
     background-color: rgba(6,6,6,0.3);
     color: white;
     text-shadow: 3px 3px 10px #000;
+}
+
+#show-category-button {
+    margin-top: 30px;
 }
 
 /********************************************** footer **************************************************/

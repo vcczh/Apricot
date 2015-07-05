@@ -12,7 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
     <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
-    <script type="text/javascript" src="./js/holder.js"></script>
 </head>
 <body>
 
@@ -43,7 +42,7 @@
                             <li class=""><a href="#">Customer Support</a></li>
                             <li class=""><a href="#">Report</a></li>
                             <li class="divider"></li>
-                            <li><a href="#">Logout</a></li>
+                            <li><a href="#">Contact US</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -87,19 +86,12 @@
     <div  class="searchbar-wrapper">
         <nav class="navbar navbar-default">
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
                 <form class="navbar-form navbar-center" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" size="100px" placeholder="Search ...">
+                        <input type="text" id="item-name" class="form-control" size="35px" placeholder="What to Buy?">
+                         <input type="text" id="place-name" class="form-control" size="35px" placeholder="Where to Buy?">
+                         <input type="text" id="seller-name" class="form-control" size="35px" placeholder="Who is Seller?">
                     </div>
                     <button type="submit" class="btn btn-default">Search</button>
                 </form>
@@ -111,6 +103,7 @@
     <div class="areaselector-wrapper">
         <div class="col-md-12 text-center">
             <h1>Choose An Area</h1>
+            <h3>See What are sold in that place</h3>
         </div>
         <div class="container">
             <div class="row">
@@ -131,16 +124,24 @@
                 </div>
 
             </div>
+            <div id="show-area-button">
+                <div  class="col-md-12 text-center">
+                    <p><a class="btn btn-default" href="#" role="button">See All Areas</a> </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="col-md-12 text-center">
+    <div class="word-wrapper">
+        <div class="col-md-12 text-center">
             <h1>Or</h1>
+        </div>
     </div>
 
     <div class="itemselector-wrapper">
         <div class="col-md-12 text-center">
             <h1>Choose An Item</h1>
+            <h3>See What are sold in that category</h3>
         </div>
         <div class="container-fluid">
 
@@ -174,6 +175,11 @@
             </p>
         </div>
 
+        </div>
+        <div id="show-category-button">
+            <div  class="col-md-12 text-center">
+                <p><a class="btn btn-default" href="#" role="button">See All  Item Categories</a> </p>
+            </div>
         </div>
     </div>
 
