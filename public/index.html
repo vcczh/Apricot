@@ -1,142 +1,161 @@
-<!DOCTYPE html>
-<html lang=>
+<html class="ng-scope" ng-app="">
 <head>
     <title>Apricot</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
     <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
     <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/holder.js"></script>
 </head>
 <body>
+    <div  class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-static-top">
 
-    <!-- nav -->s
-    <nav class="navbar navbar-default navbar-fixed-top  navbar-apricot">  
-        <div class="container">
             <div class="navbar-header">
-              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar">
-                <span class="sr-only">Toggle</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-
-              <a href="#" class="navbar-brand">Apricot</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    Apricot
+                </a>
             </div>
 
-            <div id="navbar" class="collapse navbar-collapse" role="navigation">
-                <form class="navbar-form navbar-left">
-                    <div class="input-group input-group-sm" style="max-width:360px;">
-                      <input type="text" class="form-control" placeholder="Search" name="search-term" id="search-term" >
-                      <div class="input-group-btn">
-                        <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-                      </div>
-                    </div>
-                </form>
-
-                <ul class="nav navbar-nav">
-                  <li>
-                    <a href="#"><i class="glyphicon glyphicon-home"></i> Home</a>
-                  </li>
-                  <li>
-                    <a href="#" role="button"><i class="glyphicon glyphicon-th"></i> Inventory</a>
-                  </li>
-
-                  <li>
-                    <a href="#" role="button" ><i class="glyphicon glyphicon-plus"></i> Post</a>
-                  </li>
-                </ul>
-
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i>
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="">Setting</a></li>
-                      <li><a href="">Profile</a></li>
-                      <li class="divider"></li>
-                      <li><a href="">Sign out</a></li>
-                    </ul>
-                  </li>
+                    <li> <button type="button" id="login" class="btn btn-default">Login</button> </li>
+                    <li><button type="button" id="register" class="btn btn-default">Register</button></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Help<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class=""><a href="#">How to Use</a></li>
+                            <li class=""><a href="#">Technical Support</a></li>
+                            <li class=""><a href="#">Customer Support</a></li>
+                            <li class=""><a href="#">Report</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-        </div>
-    </nav>
 
-
-    <!-- content -->
-    <div class="container-fluid index-body">
-      <div class="row">
-        <div class="col-sm-5 col-sm-offset-2">
-          <div class="panel panel-default post"> <!-- panel panel-default -->
-            <div class="row">
-              <div class="col-sm-1">
-              <img src="img/user.jpg" class="post-user-profile">
-              </div>
-              <div class="col-sm-9">
-                <div><a =href="#">Ziqiang Shi</a> </div>
-                <div class="post-date"> June 28th at 11:37am</div>
-              </div>
-            </div>
-
-            <hr>
-            <h4>My lamborghini</h4>
-            <p>$100000</p>
-            <p>This is a detailed description of this post</p>
-  
-            <div class="panel-thumbnail"><img src="img/car.jpg" class="img-responsive"></div>
-            <hr>
-            <div class="row">
-              <div class="col-sm-3 text-center"><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> <span>buy</span></a></div>
-              <div class="col-sm-3 text-center"><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> <span>likes</span></a></div>
-              <div class="col-sm-3 text-center"><a href="#"><span class="glyphicon glyphicon-comment"></span> <span>comment</span></a></div>
-              <div class="col-sm-3 text-center" ><a href="#"><span class="glyphicon glyphicon-share-alt"></span> share</a></div>
-            </div>
-            
-            <!-- comments -->
-            <hr>
-            <div class="comments">
-              <div class="row comment">
-                <div class="col-sm-1">
-                  <img src="img/user.jpg" class="comment-user-profile">
-                </div>
-                <div class="col-sm-11">
-                  <div class="comment-body"><a href="#">Ziqiang Shi</a>: <span>This one is awesome, balbalbalbalbalblalbalblabla</span></div>
-                  <div class="comment-date"> June 28th at 11:37am</div>
-                </div>
-              </div>
-
-              <div class="row comment">
-                <div class="col-sm-1">
-                  <img src="img/user.jpg" class="comment-user-profile">
-                </div>
-                <div class="col-sm-11">
-                  <div class="comment-body"><a href="#">Ziqiang Shi</a>: <span>This one is awesome, balbalbalbalbalblalbalblabla</span></div>
-                  <div class="comment-date"> June 28th at 11:37am</div>
-                </div>
-              </div>
-
-              <!-- comment input -->
-              <div class="row comment-input comment">
-                <div class="col-sm-1">
-                  <img src="img/user.jpg" class="comment-user-profile">
-                </div>
-                <div class="col-sm-11">
-                  <div>
-                    <form method="POST" action="#">
-                      <input type="text" class="comment-input" placeholder="Write a comment...">
-                    </form>
-                    <p class="comment-input-tip">Press enter to post</p>
-                </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
+        </nav>
     </div>
+
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+
+        <ol class="carousel-indicators">
+             <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+             <li data-target="#bs-carousel" data-slide-to="1"></li>
+             <li data-target="#bs-carousel" data-slide-to="2"></li>
+         </ol>
+
+         <div class="carousel-inner">
+            <div class="item slides active">
+                <div class="slide-1"></div>
+           </div>
+
+            <div class="item slides">
+                <div class="slide-2"></div>
+           </div>
+
+            <div class="item slides">
+                <div class="slide-3"></div>
+           </div>
+        
+        <div class="main-text hidden-xs">
+                <div class="col-md-12 text-center">
+                    <h1>
+                       Welcome to Apircot</h1>
+                    <h3>
+                        Shopping in a Cheaper but Saver Price.
+                    </h3>
+                </div>
+            </div>
+    </div>
+
+    <div class="areaselector-wrapper">
+        <div class="col-md-12 text-center">
+            <h1>Choose An Area</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-push-3" >
+                    <a href="http://www.usc.edu"><img class="img-responsive" src="./img/usc.jpg"  alt="USC"></a>
+                </div>
+
+                <div class="col-md-3 col-md-push-3" >
+                    <a href="http://www.ucla.edu"><img class="img-responsive" src="./img/ucla.jpg"  alt="UCLA"></a>
+                </div>
+
+                <div class="col-md-3 col-md-push-3" >
+                    <a href="http://www.ucla.edu"><img class="img-responsive" src="./img/stanford.png"  alt="STANFORD"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-12 text-center">
+            <h1>Or</h1>
+    </div>
+
+    <div class="itemselector-wrapper">
+        <div class="col-md-12 text-center">
+            <h1>Choose An Item</h1>
+        </div>
+        <div class="container-fluid">
+
+            <div class="cover-card col-sm-5" style="background: url(./img/study_table.jpg) no-repeat center top;background-size:cover;"> 
+                <p>
+                    Table
+                </p>
+            </div>
+
+            <div class="cover-card col-sm-4" style="background: url(./img/chair.jpg) no-repeat center top;background-size:cover;">
+            <p>
+                Chair
+            </p>
+        </div>
+
+        <div class="cover-card col-sm-3" style="background: url(./img/wardrobe.jpg) no-repeat center top;background-size:cover;">
+            <p>
+                Wardrobe
+            </p>
+        </div>
+
+        <div class="cover-card col-sm-5" style="background: url(./img/bookcase.jpg) no-repeat center top;background-size:cover;">
+            <p>
+                Bookcase
+            </p>
+        </div>
+
+        <div class="cover-card col-sm-5" style="background: url(./img/bed.jpg) no-repeat center top;background-size:cover;">
+            <p>
+                Bed
+            </p>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="footer-wrapper">
+        <footer class="pull-left footer">
+            <p class="col-md-12">
+                <hr class="divider">
+                    Copyright &COPY; 2015 <a href="http://www.pingpong-labs.com">Apricot</a>
+            </p>
+        </footer>
+    </div>
+
 </body>
 </html>
+
