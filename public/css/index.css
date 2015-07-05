@@ -98,13 +98,17 @@ h1.page-header {
     .hero h1 { font-size: 4em; }    
 }
 
+/******************************************** Search Bar *********************************************************/
+.form-group{
+    width: 837px;
+}
+
+.form-control {
+}
+
 /********************************************* Area Selector ******************************************************/
 .areaselector-wrapper {
     margin-top: 70px;
-}
-
-.areaselector-wrapper .container{
-    margin-left: -50px;
 }
 
 .col-md-3.col-md-push-4{
@@ -117,22 +121,6 @@ h1.page-header {
 .img-responsive {
     max-width: 200px;
     max-height: 200px;
-}
-
-.col-md-3 .col-md-push-3 > p {
-    text-align: center;
-    background-color: rgba(6,6,6,0.0);
-    color: rgba(6,6,6,0.0);
-    width: 100%;
-    height: 100%;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.col-md-3 .col-md-push-3:hover > p {
-    background-color: rgba(6,6,6,0.3);
-    color: white;
-    text-shadow: 3px 3px 10px #000;
 }
 
 
