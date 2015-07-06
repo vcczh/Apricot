@@ -117,6 +117,10 @@ h1.page-header {
     margin-top: 70px;
 }
 
+#area-h1 {
+    font-weight: bold;
+}
+
 .col-md-3.col-md-push-4{
     max-width: 200px;
     max-height: 200px;
@@ -138,10 +142,18 @@ h1.page-header {
     margin-top: 30px;
 }
 
+#btn-area-text {
+    font-size: 20px;
+}
+
 
 /********************************************* Item Selector *****************************************************/
 .itemselector-wrapper {
     margin-top: 100px;
+}
+
+#item-h1 {
+    font-weight: bold;
 }
 
 .cover-card {
@@ -172,11 +184,15 @@ h1.page-header {
     margin-top: 30px;
 }
 
+#btn-category-text {
+    font-size: 20px;
+}
+
 /********************************************** footer **************************************************/
 .footer-wrapper {
+/*    background-image: url(../img/footer_background.jpg);*/
     width: auto;
     margin-top: 150px;
-    margin-bottom: 60px;
 }
 
 .list-layout li{
