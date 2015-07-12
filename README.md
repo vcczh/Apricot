@@ -17,6 +17,7 @@ Here are the links of important documents of this project
 * [Project Objectivs](https://docs.google.com/document/d/1jCPzDl_9G7BMjG8CaQl57SJOZLb1BGvGmAYHHAnJTB8/edit)
 * [Data Model Design](https://docs.google.com/document/d/1c93CPflOASU9gbkgKHJujglOaSYAv5GhwEcJXOB11yc/edit)
 * [Web Front-End Structure Design](https://www.processon.com/view/link/558b7953e4b09bd4b8d02a2a)
+* [New Added Web Pages and Required APIs](https://docs.google.com/spreadsheets/d/1sFKzDn7u16O45FNswru1JFJS26ezDV_UjJnlMJDIvC0/edit)
 
 ## Engineering Standard
 Here are the links of Engineering Standard of this project
