@@ -49,7 +49,7 @@ ul, ol {
   left: 0;
   top: 0;
   right: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.80 );
   height: 46px;
   min-width: 590px;
   background-color: #fff;
@@ -425,13 +425,13 @@ ul, ol {
 
 /************************************************************* content ******************************************************/
 
-.content-main {
+.content-middle {
   float: right;
   width: 590px;
   border-radius: 6px;
 }
 @media (min-width: 1236px) {
-  .content-main {
+  .content-middle {
     float: left;
     margin: 0 10px;
   }
@@ -442,7 +442,7 @@ ul, ol {
 .new-post-box {
   border-radius: 5px;
   border: 1px solid #BFE0EC;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .new-post-box-inner {
@@ -477,6 +477,7 @@ ul, ol {
 
 .stream-container {
   position: relative;
+  /*margin-top: 10px;*/
 }
 
 .stream-items {
@@ -488,12 +489,13 @@ ul, ol {
   background: #fff;
   border-radius: 5px; 
   margin-bottom: 10px;
+  border: 1px solid #e1e8ed;
 }
 .stream-post {
   position: relative;
   min-height: 51px;
-  padding: 9px 12px;
-  cursor: pointer;
+  padding: 12px;
+  /*cursor: pointer;*/
   border-radius: 5px;
 }
 
@@ -501,12 +503,49 @@ ul, ol {
   margin-left: 58px;
 }
 .post-profile-avatar {
-  float: left;
-  margin-top: 3px;
-  margin-left: -58px;
   width: 48px;
   height: 48px;
   border-radius:5px;
+  margin-bottom: 10px;
+}
+
+.inventory-item-left {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 48px;
+}
+
+.item-to-from {
+  text-align: center;
+  margin: 5px 0;
+  color: #0084B4;
+  font-weight: bold;
+}
+.item-status {
+  color: #FFF;
+  font-size: 48px;
+  line-height: 1;
+  height: 48px;
+  width: 48px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.item-status-sold {
+  background-color: #d23f31;
+}
+
+.item-status-onsell {
+  background-color: green;
+}
+
+.item-status-inventory {
+  background-color: #00acc1;
+}
+
+.item-status-bought {
+  background-color: orange;
 }
 
 .post-username {
@@ -516,7 +555,12 @@ ul, ol {
 .post-time {
   color: #8899a6;
 }
-
+.post-title {
+  font-weight: bold;
+  color: #292f33;
+  padding: 6px 0;
+  /*margin-bottom: 10px;*/
+}
 .post-description {
   font-size: 14px;
   line-height: 18px;
@@ -583,7 +627,6 @@ ul, ol {
   float: left;
   width: 168px;
 }
-
 /**************************************************** dashboard right ***********************************************/
 
 .dashboardRecCard-item {
@@ -631,4 +674,181 @@ ul, ol {
   font-size: 13px;
   margin-top: 3px;
   margin-right: 9px;
+}
+
+
+/****************************************************** profile page *********************************************************/
+
+
+.profile-content {
+  background-color: #f5f8fa!important;
+  line-height: 1.375;
+  min-width: 936px;
+  position: relative;
+  padding-top: 46px;
+}
+
+.profileCanopy {
+
+}
+
+.profile-container {
+  margin: 0 auto; 
+  max-width: 890px;
+  position: relative;
+}
+
+@media screen and (min-width: 1236px) {
+    .profile-container {
+      max-width: 1190px;
+    }
+}
+
+.profileCanopy-header {
+  height: 175px;
+  background-color: #0084B4;
+}
+
+.profile-avatar {
+  top: 57px;
+  left: 10px;
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border: 5px solid #fff;
+  border-radius: 12px;
+}
+
+.profile-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.profileCanopy-navBar {
+  background-color: #fff;
+  border-bottom: 1px solid #e1e8ed;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 60px;
+}
+.profileCanopy-navBar-nav {
+  margin-left: 300px;
+  height: 60px;
+}
+
+.profileNav-item.is-active a, .profileNav-link:hover {
+  border-bottom: 4px solid #0084B4;
+}
+
+.profileNav-item.is-active a{
+  color: #292f33;
+}
+.profileNav-item {
+  color: #66757f;
+  display: inline-block;
+  line-height: 1;
+}
+
+.profileNav-link {
+  display: block;
+  border:0;
+  height: 60px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 14px 15px 7px 15px;
+  transition: all .15s ease-in-out;
+ }
+.profileNav-link:hover {
+  text-decoration: none;
+}
+
+.profileNav-label {
+  color: #66757f;
+  font-size: 11px;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.profileNav-value {
+  font-size: 18px;
+  padding-top: 3px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.profileHeaderCard {
+  margin-top: 27px;
+  margin-bottom: 25px;
+  padding: 0 15px;
+}
+
+.profileHeaderCard-name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+}
+
+.profileHeaderCard-bio {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.profileHeaderCard-location {
+
+}
+.profileHeaderCard-joinDate {
+
+}
+
+/********************************************************* following *********************************************************/
+
+.friends-list {
+
+}
+
+.friends-card {
+  position: relative;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  padding: 5px;
+}
+
+.friends-card-inner {
+  min-height: 48px;
+  margin-left: 58px;
+  margin-right: 40px;
+}
+
+.friends-card-avatar {
+  position: absolute;
+  top: 5;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 5px;
+}
+
+.friends-card-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #292f33;
+  margin-bottom: 5px;
+}
+
+.friends-card-description {
+  font-size: 13px;
+  color: #8899a6;
+}
+.friends-follow-btn {
+  position: absolute;
+  right: 5px;
+  top: 12px;
 }

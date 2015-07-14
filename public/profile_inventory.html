@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apricot</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> 
+    <link rel="stylesheet" type="text/css" href="./css/home_page.css" />
+    <!-- <script src="./js/less.js" type="text/javascript"></script> -->
+    </head>
+<body class="profilePage">
+
+<!-- nav bar -->
+<div class="global-nav">
+    <div class="index-nav-container">
+
+        <!-- navigation logo -->
+        <div class="nav-bar-logo">
+            <!-- <img src="img/logo.jpg"> -->
+            <span>Apricot</span>
+        </div>
+
+        <!-- navigation menu -->
+        <div class="nav-menu">
+            <ul class="nav-list">
+                <li id="nav-home">
+                    <a class="nav-menu-active" href="home_page.html">
+                        <span class="nav-list-icon glyphicon glyphicon-home glyphicon-lg"></span>
+                        <span class="nav-list-text">Home</span>
+                    </a>
+                </li>
+                <li id="nav-inventory">
+                    <a href="profile_inventory.html">
+                        <span class="nav-list-icon glyphicon glyphicon-th glyphicon-lg"></span>
+                        <span class="nav-list-text">Inventory</span>
+                    </a>
+                </li>
+                <li id="nav-notification">
+                    <a href="#">
+                        <span class="nav-list-icon glyphicon glyphicon-bell glyphicon-lg"></span>
+                        <span class="nav-list-text">Notification</span>
+                    </a>
+                </li>
+            </ul>
+        </div> 
+
+        <!-- navigation right -->
+
+        <div class="nav-right clearFix">
+
+            <div class="nav-search">
+              <form class="nav-form-search" action="/search">
+                  <input type="text" class="nav-search-input" placeholder="Search Apricot" autocomplete="off" spellcheck="false">
+                  <span class="nav-search-icon-wrapper">
+                      <button type="submit" class="nav-search-icon glyphicon glyphicon-search glyphicon-lg"></button>
+                  </span>
+              </form>
+            </div>
+
+            <ul class="nav-right-actions">
+                <li class="nav-setting dropdown ">
+                    <a class="nav-setting-toggle dropdown-toggle" data-toggle="dropdown"><img src="img/user-pic1.jpg">
+                    </a>
+                    <ul class="dropdown-menu nav-setting-dropdown">
+                      <li><a href="#">Ziqiang Shi</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">Settings</a></li>
+                      <li><a href="#">Log out</a></li>
+                    </ul> 
+                </li>
+                <li class="nav-post">
+                    <button type="button" class="btn btn-primary new-post">POST</button>
+                </li>
+            </ul> 
+        </div>
+   </div>
+</div>
+
+<div class="profile-content" >
+
+    <div class="profileCanopy">
+        <div class="profileCanopy-header">
+            <div class="profile-container">
+                <div class="profile-avatar">
+                    <img class="profile-avatar-img" src="img/user-pic2.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="profileCanopy-navBar">
+            <div class="profile-container">
+                <div class="profileCanopy-navBar-nav">
+                    <ul class="profileNav-list">
+                        <li class="profileNav-item is-active">
+                            <a href="profile_inventory.html" class="profileNav-link">
+                                <div class="profileNav-label">Inventory</div>
+                                <div class="profileNav-value">10</div>
+                            </a>
+                        </li><li class="profileNav-item">
+                            <a href="profile_post.html" class="profileNav-link">
+                                <div class="profileNav-label">posts</div>
+                                <div class="profileNav-value">8</div>
+                            </a>
+                        </li><li class="profileNav-item">
+                            <a href="profile_following.html" class="profileNav-link">
+                                <div class="profileNav-label">following</div>
+                                <div class="profileNav-value">2</div>
+                            </a>
+                        </li><li class="profileNav-item">
+                            <a href="profile_follower.html" class="profileNav-link">
+                                <div class="profileNav-label">followers</div>
+                                <div class="profileNav-value">1</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-body">
+        <div class="profile-container clearFix" style="margin-top: 10px">
+            <div class="dashboard dashboard-left">
+                <div class="profileHeaderCard">
+                    <h1><a class="profileHeaderCard-name" href="#">Ziqiang Shi</a></h1>
+                    <p class="profileHeaderCard-bio">What doesn't kill you make you stronger
+                    </p>
+                    <div class="profileHeaderCard-location">
+                    <span class="glyphicon glyphicon-globe"></span>
+                    <span>UCLA, Los Angeles</span>
+                    </div>
+                    <div class="profileHeaderCard-joinDate">
+                    <span class="glyphicon glyphicon-time"></span>
+                    <span>Joined December 2010</span>
+                    </div>
+                </div>
+                <div class="dashboardCategoryCard module">
+                  <div class="dashboardCategoryCard-header">
+                    <h3 class="card-header"><span>Popular goods</span></h3>
+                    <span class="card-middot">&#8729;</span>
+                    <a role="button" class="card-link">Change</a>
+                  </div>
+
+                  <div class="dashboardCategoryCard-items">
+                    <ul class="dashboardCategoryCard-itemsList">
+                      <li class="dashboardCategoryCard-item">
+                        <a href="#">
+                          <p class="goods-name">Car</p>
+                          <p class="goods-number">100 posts in this category</p>
+                        </a>
+                      </li>
+
+                      <li class="dashboardCategoryCard-item">
+                        <a href="#">
+                          <p class="goods-name">Desk</p>
+                          <p class="goods-number">130 posts in this category</p>
+                        </a>
+                      </li>
+
+                      <li class="dashboardCategoryCard-item">
+                        <a href="#">
+                          <p class="goods-name">book</p>
+                          <p class="goods-number">130 posts in this category</p>
+                        </a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+            <div class="content-middle">
+              <div class="stream-container">
+                <ol class="stream-items">
+                  <li class="stream-item">
+                    <div class="stream-post">
+                      <div class="stream-content">
+                       <div class="inventory-item-left">
+                          <div class="item-status item-status-sold">S</div>
+                          <div class="item-to-from">To</div>
+                          <a href="#">
+                              <img src="img/user-pic2.jpg" class="post-profile-avatar">
+                          </a>
+                        </div>
+
+                        <div class="stream-item-header">
+                          <span class="post-time">July 6</span>
+                        </div>
+                        <div class="post-title">my lamborghini</div>
+                        <div class="post-description">
+                        This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell
+                        </div>
+
+                        <div class="post-pic-cost">
+                          <div class="post-pic">
+                            <img src="img/post-pic.jpg">
+                          </div>
+                          <div class="post-cost">
+                            <div class="post-cost-value">$10000</div>
+                          </div>
+                        </div>
+
+                        <hr class="post-hr">
+                        <div class="post-action-menu clearFix">
+                          <div class="post-action post-action-like"><span class="glyphicon glyphicon-remove"></span>&nbsp;remove</div>
+                          <div class="post-action post-action-comment"><span class="glyphicon glyphicon-lock"></span>&nbsp;private</div>
+                          <div class="post-action post-action-share"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;like</div>
+                    </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="stream-item">
+                    <div class="stream-post">
+                      <div class="stream-content">
+                       <div class="inventory-item-left">
+                          <div class="item-status item-status-onsell">O</div>
+                        </div>
+
+                        <div class="stream-item-header">
+                          <span class="post-time">July 6</span>
+                        </div>
+                        <div class="post-title">my lamborghini</div>
+                        <div class="post-description">
+                        This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell
+                        </div>
+
+                        <div class="post-pic-cost">
+                          <div class="post-pic">
+                            <img src="img/post-pic.jpg">
+                          </div>
+                          <div class="post-cost">
+                            <div class="post-cost-value">$10000</div>
+                      </div>
+                        </div>
+
+                        <hr class="post-hr">
+                        <div class="post-action-menu clearFix">
+                          <div class="post-action post-action-like"><span class="glyphicon glyphicon-remove"></span>&nbsp;remove</div>
+                          <div class="post-action post-action-comment"><span class="glyphicon glyphicon-lock"></span>&nbsp;private</div>
+                          <div class="post-action post-action-share"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;like</div>
+                    </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="stream-item">
+                    <div class="stream-post">
+                      <div class="stream-content">
+
+                       <div class="inventory-item-left">
+                          <div class="item-status item-status-inventory">I</div>
+                        </div>
+
+                        <div class="stream-item-header">
+                          <span class="post-time">July 6</span>
+                        </div>
+                        <div class="post-title">my lamborghini</div>
+                        <div class="post-description">
+                        This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell
+                        </div>
+
+                        <div class="post-pic-cost">
+                          <div class="post-pic">
+                            <img src="img/post-pic.jpg">
+                          </div>
+                          <div class="post-cost">
+                            <div class="post-cost-value">$10000</div>
+                          </div>
+                        </div>
+
+                        <hr class="post-hr">
+                        <div class="post-action-menu clearFix">
+                          <div class="post-action post-action-like"><span class="glyphicon glyphicon-remove"></span>&nbsp;remove</div>
+                          <div class="post-action post-action-comment"><span class="glyphicon glyphicon-lock"></span>&nbsp;private</div>
+                          <div class="post-action post-action-share"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;like</div>
+                    </div>
+
+                      </div>
+                    </div>
+                  </li>
+                  <li class="stream-item">
+                    <div class="stream-post">
+                      <div class="stream-content">
+
+                       <div class="inventory-item-left">
+                          <div class="item-status item-status-bought">B</div>
+                          <div class="item-to-from">From</div>
+                          <a href="#">
+                              <img src="img/user-pic2.jpg" class="post-profile-avatar">
+                          </a>
+                        </div>
+
+                        <div class="stream-item-header">
+                          <span class="post-time">July 6</span>
+                        </div>
+                        <div class="post-title">my lamborghini</div>
+                        <div class="post-description">
+                        This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell.This is the description of the sell
+                        </div>
+
+                        <div class="post-pic-cost">
+                          <div class="post-pic">
+                            <img src="img/post-pic.jpg">
+                          </div>
+                          <div class="post-cost">
+                            <div class="post-cost-value">$10000</div>
+                      </div>
+                        </div>
+
+                        <hr class="post-hr">
+                        <div class="post-action-menu clearFix">
+                          <div class="post-action post-action-like"><span class="glyphicon glyphicon-remove"></span>&nbsp;remove</div>
+                          <div class="post-action post-action-comment"><span class="glyphicon glyphicon-lock"></span>&nbsp;private</div>
+                          <div class="post-action post-action-share"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;like</div>
+                    </div>
+
+                      </div>
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+            <div class="dashboard dashboard-right">
+                <div class="dashboardRecCard module">
+                  <div class="dashboardRecCard-header">
+                    <h3 class="card-header"><span>Popular sellers</span></h3>
+                    <span class="card-middot">&#8729;</span>
+                    <a role="button" class="card-link">Refresh</a>
+                    <span class="card-middot">&#8729;</span>
+                    <a role="button" class="card-link">View all</a>
+                  </div>
+
+                  <div class="dashboardRecCard-items">
+                    <ul class="dashboardRecCard-itemsList">
+                      <li class="dashboardRecCard-item">
+                        <div class="rec-user-dismiss">x</div>
+                        <div class="dashboardRecCard-item-inner">
+                          <a href="#" class="dashboardRecCard-item-link">
+                            <img src="img/user-pic1.jpg" class="rec-user-avatar">
+                            <div class="rec-user-name">Ziqiang Shi</div>
+                          </a>
+                          <div class="rec-user-description">Followed by 25 people</div>
+                          <div class="">
+                            <button type="button" class="btn btn-default rec-follow-btn">Follow</button>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="dashboardRecCard-item">
+                        <div class="rec-user-dismiss">x</div>
+                        <div class="dashboardRecCard-item-inner">
+                          <a href="#" class="dashboardRecCard-item-link">
+                            <img src="img/user-pic1.jpg" class="rec-user-avatar">
+                            <div class="rec-user-name">Ziqiang Shi</div>
+                          </a>
+                          <div class="rec-user-description">Followed by 25 people</div>
+                          <div class="">
+                            <button type="button" class="btn btn-default rec-follow-btn">Follow</button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="dashboardRecCard module">
+                  <div class="dashboardRecCard-header">
+                    <h3 class="card-header"><span>People you may know</span></h3>
+                    <span class="card-middot">&#8729;</span>
+                    <a role="button" class="card-link">Refresh</a>
+                    <span class="card-middot">&#8729;</span>
+                    <a role="button" class="card-link">View all</a>
+                  </div>
+
+                  <div class="dashboardRecCard-items">
+                    <ul class="dashboardRecCard-itemsList">
+                      <li class="dashboardRecCard-item">
+                        <div class="rec-user-dismiss">x</div>
+                        <div class="dashboardRecCard-item-inner">
+                          <a href="#" class="dashboardRecCard-item-link">
+                            <img src="img/user-pic1.jpg" class="rec-user-avatar">
+                            <div class="rec-user-name">Ziqiang Shi</div>
+                          </a>
+                          <div class="rec-user-description">25 mutual people</div>
+                          <div class="">
+                            <button type="button" class="btn btn-default rec-follow-btn">Follow</button>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="dashboardRecCard-item">
+                        <div class="rec-user-dismiss">x</div>
+                        <div class="dashboardRecCard-item-inner">
+                          <a href="#" class="dashboardRecCard-item-link">
+                            <img src="img/user-pic1.jpg" class="rec-user-avatar">
+                            <div class="rec-user-name">Ziqiang Shi</div>
+                          </a>
+                          <div class="rec-user-description">10 mutual friends</div>
+                          <div class="">
+                            <button type="button" class="btn btn-default rec-follow-btn">Follow</button>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
