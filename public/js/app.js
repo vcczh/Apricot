@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var app = angular.module("apricotApp", ["ngRoute"]);
 
 app.controller("homePageController", function($scope){
@@ -48,12 +47,3 @@ app.config(function($routeProvider) {
             controller: "profilePageController"
         })
 });
-=======
-'use strict'
-
-/* App Module */
-
-
-
-
->>>>>>> 06ff8c3b4271b2937149deed7746a235af7da063
