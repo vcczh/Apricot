@@ -1,3 +1,6 @@
+OS: Ubuntu 14.04
+Node: v0.10.35
+
 Apricot@0.0.0 start /home/ybc/Project/Apricot
 node ./bin/www
 
