@@ -1,0 +1,38 @@
+Apricot@0.0.0 start /home/ybc/Project/Apricot
+node ./bin/www
+
+
+/home/ybc/Project/Apricot/node_modules/bcrypt/node_modules/bindings/bindings.js:83
+        throw e
+              ^
+Error: /home/ybc/Project/Apricot/node_modules/bcrypt/build/Release/bcrypt_lib.node: invalid ELF header
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at bindings (/home/ybc/Project/Apricot/node_modules/bcrypt/node_modules/bindings/bindings.js:76:44)
+    at Object.<anonymous> (/home/ybc/Project/Apricot/node_modules/bcrypt/bcrypt.js:3:35)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
+Apricot@0.0.0 start /home/ybc/Project/Apricot
+node ./bin/www
+
+
+/home/ybc/Project/Apricot/node_modules/bcrypt/node_modules/bindings/bindings.js:83
+        throw e
+              ^
+Error: /home/ybc/Project/Apricot/node_modules/bcrypt/build/Release/bcrypt_lib.node: undefined symbol: node_module_register
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.require (module.js:364:17)
+    at require (module.js:380:17)
+    at bindings (/home/ybc/Project/Apricot/node_modules/bcrypt/node_modules/bindings/bindings.js:76:44)
+    at Object.<anonymous> (/home/ybc/Project/Apricot/node_modules/bcrypt/bcrypt.js:3:35)
+    at Module._compile (module.js:456:26)
+    at Object.Module._extensions..js (module.js:474:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+
