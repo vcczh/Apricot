@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>Apricot</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/payment.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.js"></script>
+    <script type="text/javascript" src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/payment.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar at the header -->
+    <div  class="navbar-wrapper">
+        <nav class="navbar navbar-default navbar-static-top">
+            <!--  Bran icon on the navigation bar -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                Apricot
+                </a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="stepwizard-wrapper">      
+        <div class="row bs-wizard">
+
+            <div class="col-xs-3 bs-wizard-step complete">
+            	<div class="text-center bs-wizard-stepnum">Step 1</div>
+            	<div class="progress"><div class="progress-bar"></div></div>
+            	<a href="#" class="bs-wizard-dot"></a>
+            	<div class="bs-wizard-info text-center">Sign In</div>
+            </div>
+
+            <div class="col-xs-3 bs-wizard-step complete">
+            	<div class="text-center bs-wizard-stepnum">Step 2</div>
+            	<div class="progress"><div class="progress-bar"></div></div>
+            	<a href="#" class="bs-wizard-dot"></a>
+            	<div class="bs-wizard-info text-center">Mailing Address &  Payment</div>
+            </div>
+
+            <div class="col-xs-3 bs-wizard-step complete">
+            	<div class="text-center bs-wizard-stepnum">Step 3</div>
+            	<div class="progress"><div class="progress-bar"></div></div>
+            	<a href="#" class="bs-wizard-dot"></a>
+            	<div class="bs-wizard-info text-center">Place Order</div>
+            </div>
+
+            <div class="col-xs-3 bs-wizard-step complete">
+            	<div class="text-center bs-wizard-stepnum">Step 4</div>
+            	<div class="progress"><div class="progress-bar"></div></div>
+            	<a href="#" class="bs-wizard-dot"></a>
+            	<div class="bs-wizard-info text-center">Thank You</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="thx warpper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="msg-template">
+                    <div class="msg-character">
+                        <img src="./img/Apricot_thx_character.jpg" class="img-apricot-character"></img>
+                    </div>
+                    <div class="msg-details">
+                        <h2>Thank You for Shopping in Apricot!</h2>
+                        <h5>Wating ... We will redirect you to home page. Or you can click the button below.</h5>
+                    </div>
+                    <div class="msg-actions">
+                        <!-- The refered link need to be modified -->
+                        <a href="http://www.jquery2dotnet.com" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span> Back to HomePage</a>
+                    </div>
+            </div>
+            </div>  
+        </div>
+    </div>
+
+</body>
+</html>
