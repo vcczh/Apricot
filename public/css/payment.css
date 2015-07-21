@@ -226,6 +226,88 @@ h1.page-header {
     border-color: #1CA347;
 }
 
+/**************************************************Address & Payment Area ********************************************************/
+.address-wrapper {
+}
+
+.form-group{
+}
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+.credit-card-box label {
+    display: block;
+}
+
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: table;
+}
+
+.credit-card-box .display-tr {
+    display: table-row;
+}
+
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    min-width: 180px;
+}
+
+.orderShort { 
+    border-bottom:1px solid #ddd;
+}
+
+.btn-order {
+    color: #ffffff;
+    background-color: #37d980;
+    border-color: #37d980;
+    border-radius:0;
+    margin-bottom:10px
+}
+
+.btn-order:hover,
+.btn-order:focus,
+.btn-order:active,
+.btn-order.active,
+.open .dropdown-toggle.btn-order {
+    color: white;
+    background-color:#34ca78;
+    border-color: #34ca78;
+}
+
+.margin10 {
+    margin-bottom:10px; 
+    margin-right:10px;
+}
+
 /************************************************** THX Area *********************************************************************/
 
 .msg-template {
