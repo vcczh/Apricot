@@ -25,7 +25,9 @@ h1.page-header {
     border-bottom: 0;
 }
 
-.bs-wizard {margin-top: 40px;}
+.bs-wizard {
+    margin-top: 40px;
+}
 
 /*Form Wizard*/
 .bs-wizard {
@@ -329,3 +331,33 @@ h1.page-header {
     height: 300px;
     width: 300px;
 }
+
+/******************************* footer *******************************************************************/
+footer-wrapper {
+/*    background-image: url(../img/footer_background.jpg);*/
+    width: auto;
+    margin-top: 150px;
+}
+
+.list-layout li{
+    list-style-type:none;
+}
+
+.drop-up {
+    top: auto;
+    bottom: 100% !important;
+}
+
+#site-selection {
+    padding-top: 20px;
+}
+
+#company-right {
+    margin-top: 20px;
+}
+
+.btn-social-icon {margin-bottom: 4px;}
+.social-class .social-hex{font-family:Monaco,Menlo,Consolas,"Courier New",monospace;font-size:10px;opacity:.3;float:right}
+.social-class li{margin-bottom:4px}.social-class li:hover .social-hex{opacity:1}
+.social-class li:hover code{background-color:#e8e8ee}
+.social-class code{cursor:default}
