@@ -310,6 +310,38 @@ h1.page-header {
     margin-right:10px;
 }
 
+.btn-radio {
+    width: 100%;
+}
+
+.div-radio {
+    opacity: 0.5;
+    margin-top: 3px;
+    margin-bottom: 7px;
+}
+
+.space-20 {
+    margin-top: 20px;
+}
+
+.step-num,
+.step-name{
+    margin-left: 30px;
+}
+
+#address-line-one-input,
+#address-line-two-input,
+#address-city-input,
+#address-state-input,
+#address-postcode-input,
+#address-country-input{
+    height: 40px;
+}
+
+.default-payment-radio{
+    margin-bottom: 10px;
+}
+
 /************************************************** THX Area *********************************************************************/
 
 .msg-template {
