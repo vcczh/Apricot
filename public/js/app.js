@@ -1,6 +1,6 @@
 var app = angular.module("apricotApp", ["ngRoute"]);
 
-app.controller("homePageController", function($scope){
+app.controller("homepageController", function ($scope){
     $scope.posts = [
         {
             name: "Ziqiang Shi",
@@ -22,28 +22,20 @@ app.controller("homePageController", function($scope){
     ];
 });
 
-app.controller("profilePageController", function($scope){
+app.controller("profilePageController", function ($scope){
 
 });
+
 
 
 app.config(function($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "profile_inventory.html",
-            controller: "profilePageController"
+            templateUrl: "home_page.html",
+            controller: "homepageController"
         })
-        .when("/profile_post", {
+        .when("/profile", {
             templateUrl: "profile_post.html",
-            controller: "profilePageController"
-        })
-        .when("/profile_follower", {
-            templateUrl: "profile_follower.html",
-            controller: "profilePageController"
-
-        })
-        .when("/profile_following", {
-            templateUrl: "profile_following.html",
-            controller: "profilePageController"
-        })
+            controller: "profileController"
+        });
 });
