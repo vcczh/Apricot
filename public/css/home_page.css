@@ -852,3 +852,9 @@ ul, ol {
   right: 5px;
   top: 12px;
 }
+
+.dashboardProfileCard-avatarImage img {
+  height: 68px;
+  width: 68px;
+  border-radius: 7px;
+}

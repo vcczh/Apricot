@@ -1,0 +1,231 @@
+<div class="body-wrapper clearFix">
+
+  <!-- left dashboard  -->
+  <div class="dashboard dashboard-left">
+
+    <!-- left dashboard profile card -->
+    <div class="dashboardProfileCard module">
+      <a href="#" class="dashboardProfileCard-bg"></a>
+      <div class="dashboardProfileCard-content">
+        <div class="dashboardProfileCard-avatarContainer">
+          <a class="dashboardProfileCard-avatarLink">
+            <div class="dashboardProfileCard-avatarImage">
+              <img ng-src="{{user.user_pic}}">
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="dashboardProfileCard-userFields"> 
+          <div class="dashboardProfileCard-name">
+            <a href="#" class="u-linkClean">Ziqiang Shi</a>
+          </div>
+      </div>
+      <div class="dashboardProfileCard-stats">
+          <ul class="dashboardProfileCard-statsList clearFix">
+            <li class="dashboardProfileCard-stat">
+              <a href="#" class="dashboardProfileCard-statLink u-linkClean">
+                <span class="dashboardProfileCard-statLabel">Sell</span>
+                <span class="dashboardProfileCard-statValue">{{statistics.sell}}</span>
+              </a>
+            </li>
+            <li class="dashboardProfileCard-stat">
+              <a href="#" class="dashboardProfileCard-statLink u-linkClean">
+                <span class="dashboardProfileCard-statLabel">FOLLOWING</span>
+                <span class="dashboardProfileCard-statValue">{{statistics.following}}</span>
+              </a>
+            </li>
+
+            <li class="dashboardProfileCard-stat">
+              <a href="#" class="dashboardProfileCard-statLink u-linkClean">
+                <span class="dashboardProfileCard-statLabel">FOLLOWERS</span>
+                <span class="dashboardProfileCard-statValue">{{statistics.follower}}</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- left dashboard sell categories -->
+    <div class="dashboardCategoryCard module">
+      <div class="dashboardCategoryCard-header">
+        <h3 class="card-header"><span>Popular goods</span></h3>
+        <span class="card-middot">&#8729;</span>
+        <a role="button" class="card-link">Change</a>
+      </div>
+
+      <div class="dashboardCategoryCard-items">
+        <ul class="dashboardCategoryCard-itemsList">
+          <li class="dashboardCategoryCard-item">
+            <a href="#">
+              <p class="goods-name">Car</p>
+              <p class="goods-number">100 posts in this category</p>
+            </a>
+          </li>
+
+          <li class="dashboardCategoryCard-item">
+            <a href="#">
+              <p class="goods-name">Desk</p>
+              <p class="goods-number">130 posts in this category</p>
+            </a>
+          </li>
+
+          <li class="dashboardCategoryCard-item">
+            <a href="#">
+              <p class="goods-name">book</p>
+              <p class="goods-number">130 posts in this category</p>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- main post stream -->
+  <div class="content-middle">
+    <div class="new-post-box">
+      <div class="new-post-box-inner">
+        <img src="img/user-pic2.jpg" class="size32">
+
+        <form class="new-post-form" action="#" method="post">
+          <div class="post-content">
+            <div class="post-content-faker">
+              <div>What's happening</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="stream-container">
+      <ol class="stream-items">
+        <li class="stream-item" ng-repeat="feed in feeds">
+          <div class="stream-post">
+            <div class="stream-content">
+              <div class="inventory-item-left">
+                <a href="#">
+                    <img src="img/user-pic2.jpg" class="post-profile-avatar">
+                </a>
+              </div>
+
+              <div class="stream-item-header">
+                <a href="#">
+                  <span class="post-username">{{feed.name}}</span>
+                </a>
+                <span class="post-time">{{feed.date}}</span>
+              </div>
+              <div class="post-title"><span>{{feed.title}}</span></div>
+              <div class="post-description">{{feed.description}}</div>
+
+              <div class="post-pic-cost">
+                <div class="post-pic">
+                  <img src="img/post-pic.jpg">
+                </div>
+                <div class="post-cost">
+                  <div class="post-cost-value">${{feed.value}}</div>
+                  <div class="post-cost-buy-btn"><span class="glyphicon glyphicon-shopping-cart"></span></div>
+                  <div class="post-cost-num-buyers">{{feed.nBuyers}}</div>
+                </div>
+              </div>
+
+              <hr class="post-hr">
+              <div class="post-action-menu clearFix">
+                <div class="post-action post-action-like"><span class="glyphicon glyphicon-comment"></span>&nbsp;reply</div>
+                <div class="post-action post-action-comment"><span class="glyphicon glyphicon-share-alt"></span>&nbsp;share</div>
+                <div class="post-action post-action-share"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;like</div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- right dashboard -->
+  <div class="dashboard dashboard-right">
+    <div class="dashboardRecCard module">
+      <div class="dashboardRecCard-header">
+        <h3 class="card-header"><span>Popular sellers</span></h3>
+        <span class="card-middot">&#8729;</span>
+        <a role="button" class="card-link">Refresh</a>
+        <span class="card-middot">&#8729;</span>
+        <a role="button" class="card-link">View all</a>
+      </div>
+
+      <div class="dashboardRecCard-items">
+        <ul class="dashboardRecCard-itemsList">
+          <li class="dashboardRecCard-item">
+            <div class="rec-user-dismiss">x</div>
+            <div class="dashboardRecCard-item-inner">
+              <a href="#" class="dashboardRecCard-item-link">
+                <img src="img/user-pic1.jpg" class="rec-user-avatar">
+                <div class="rec-user-name">Ziqiang Shi</div>
+              </a>
+              <div class="rec-user-description">Followed by 25 people</div>
+              <div class="">
+                <button type="button" class="btn btn-default rec-follow-btn">Follow</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="dashboardRecCard-item">
+            <div class="rec-user-dismiss">x</div>
+            <div class="dashboardRecCard-item-inner">
+              <a href="#" class="dashboardRecCard-item-link">
+                <img src="img/user-pic1.jpg" class="rec-user-avatar">
+                <div class="rec-user-name">Ziqiang Shi</div>
+              </a>
+              <div class="rec-user-description">Followed by 25 people</div>
+              <div class="">
+                <button type="button" class="btn btn-default rec-follow-btn">Follow</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="dashboardRecCard module">
+      <div class="dashboardRecCard-header">
+        <h3 class="card-header"><span>People you may know</span></h3>
+        <span class="card-middot">&#8729;</span>
+        <a role="button" class="card-link">Refresh</a>
+        <span class="card-middot">&#8729;</span>
+        <a role="button" class="card-link">View all</a>
+      </div>
+
+      <div class="dashboardRecCard-items">
+        <ul class="dashboardRecCard-itemsList">
+          <li class="dashboardRecCard-item">
+            <div class="rec-user-dismiss">x</div>
+            <div class="dashboardRecCard-item-inner">
+              <a href="#" class="dashboardRecCard-item-link">
+                <img src="img/user-pic1.jpg" class="rec-user-avatar">
+                <div class="rec-user-name">Ziqiang Shi</div>
+              </a>
+              <div class="rec-user-description">25 mutual people</div>
+              <div class="">
+                <button type="button" class="btn btn-default rec-follow-btn">Follow</button>
+              </div>
+            </div>
+          </li>
+
+          <li class="dashboardRecCard-item">
+            <div class="rec-user-dismiss">x</div>
+            <div class="dashboardRecCard-item-inner">
+              <a href="#" class="dashboardRecCard-item-link">
+                <img src="img/user-pic1.jpg" class="rec-user-avatar">
+                <div class="rec-user-name">Ziqiang Shi</div>
+              </a>
+              <div class="rec-user-description">10 mutual friends</div>
+              <div class="">
+                <button type="button" class="btn btn-default rec-follow-btn">Follow</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+ </div>

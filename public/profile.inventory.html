@@ -1,0 +1,50 @@
+<div class="content-middle">
+  <div class="stream-container">
+    <ol class="stream-items">
+      <li class="stream-item" ng-repeat="item in inventory">
+        <div class="stream-post">
+          <div class="stream-content">
+           <div class="inventory-item-left">
+              <div class="item-status" ng-class="{ 'item-status-sold':  item.status == 'sold', 'item-status-onsell': item.status == 'onsell', 'item-status-inventory': item.status == 'inventory', 'item-status-bought': item.status == 'bought'}">
+                  <span ng-switch="item.status">
+                    <span ng-switch-when="sold">S</span>
+                    <span ng-switch-when="onsell">O</span>
+                    <span ng-switch-when="inventory">I</span>
+                    <span ng-switch-when="bought">B</span>
+                  </span>
+              </div>
+              <div class="item-to-from" ng-show="item.status == 'sold'">To</div>
+              <div class="item-to-from" ng-show="item.status == 'bought'">From</div>
+              <a href="#" ng-show="item.status == 'sold' || item.status == 'bought'">
+                  <img ng-src="{{ item.transaction_user_pic }}" class="post-profile-avatar">
+              </a>
+            </div>
+
+            <div class="stream-item-header">
+              <span class="post-time">{{ item.date }}</span>
+            </div>
+            <div class="post-title">{{ item.title }}</div>
+            <div class="post-description">{{ item.description}}</div>
+
+            <div class="post-pic-cost">
+              <div class="post-pic">
+                <img ng-src="{{ item.pic }}">
+              </div>
+              <div class="post-cost">
+                <div class="post-cost-value">${{item.value}}</div>
+              </div>
+            </div>
+
+            <hr class="post-hr">
+            <div class="post-action-menu clearFix">
+              <div class="post-action post-action-like"><span class="glyphicon glyphicon-remove"></span>&nbsp;remove</div>
+              <div class="post-action post-action-comment"><span class="glyphicon glyphicon-lock"></span>&nbsp;private</div>
+              <div class="post-action post-action-share"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;like</div>
+        </div>
+
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>

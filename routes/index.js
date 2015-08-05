@@ -1,9 +1,18 @@
 var express = require('express');
+
+var db = require('../models/dbhandler');
+
 var router = express.Router();
 
-router.get('/', function(req, res, next){
-    res.render('index');
+
+/* GET home page. */
+router.route('/').get(function (req, res) {
+	res.render('index', {});
 });
 
-module.export = router;
+/* Test Db connection with sample query */
+// router.get('/testDB', function (req, res) {
+// 	db.test(req, res);
+// });
 
+module.exports = router;

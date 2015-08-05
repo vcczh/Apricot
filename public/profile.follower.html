@@ -1,0 +1,18 @@
+<div class="content-middle">
+    <div class="stream-container">
+      <ul class="friends-list">
+        <li class="friends-card" ng-repeat="follower in followers">
+          <div class="friends-card-inner">
+            <a href="#" class="friends-card-link">
+              <img ng-src="{{follower.profileImg}}" class="friends-card-avatar">
+              <div class="friends-card-name">{{ follower.name}}</div>
+            </a>
+            <div class="friends-card-description">Followed by {{ follower.followeBy}} people</div>
+            <div>
+              <button type="button" class="btn btn-default friends-follow-btn">Follow</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+</div>

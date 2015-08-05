@@ -14,7 +14,7 @@ var session = require('express-session');
 
 //Get the JS files loaded
 var index = require('./routes/index');
-//var authenticator = require('./routes/authenticator')(passport);
+var authenticator = require('./routes/authenticator')(passport);
 var api = require('./routes/api');
 
 //Init the app
@@ -38,6 +38,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use('/', index);
+
 app.use('/auth', authenticator);
 app.use('/api', api);
 
